@@ -16,7 +16,9 @@ The bot simply picks the first result, but it does support including the artist 
 
     Lullaby by Bennett
 
+
     Lullaby - Bennett
+
 
     Lullaby
 
@@ -25,6 +27,7 @@ The bot simply picks the first result, but it does support including the artist 
 The bot does its best to extract the artist and song title from the YouTube video's oEmbed data. Works most of the time :)
 
     https://youtu.be/Cd1yeOGcL84?si=wYjhKnpbYPxM8-dH
+
 
     https://youtu.be/PD12zGuqSRY?si=JSjD_yZwLi-q_FcR
 
@@ -177,6 +180,7 @@ This message can be anything; it just lets viewers know that a song was added. I
 Under the "False Result", right-click and select:
 
     Add -> Twitch -> Chat -> Send Message to Channel
+
 
     failed to add song...
 
