@@ -95,6 +95,17 @@ const searchTrackByParts = async (token, parts) => {
 const searchTrack = async (token, input) => {
 	return searchTrackByParts(token, parseSongQuery(input))
 }
+const searchTrackWithArtistFallback = async (token, parts) => {
+	let track = await searchTrackByParts(token, parts)
+	if(track || !parts.artist) return track
+
+	if(DEBUG) console.log('RETRYING WITH SWAPPED ARTIST/TRACK...', {
+		track: parts.artist,
+		artist: parts.track,
+	})
+
+	return searchTrackByParts(token, { track: parts.artist, artist: parts.track })
+}
 const isYouTubeUrl = (input) => {
 	const normalized = normalizeInput(input)
 	return /(?:youtube\.com\/watch\?v=|youtu\.be\/|youtube\.com\/shorts\/)/i.test(normalized)
@@ -168,7 +179,7 @@ const resolveTrackId = async (token, input) => {
 			console.log('SEARCH PARTS:', parts)
 		}
 
-		const track = await searchTrackByParts(token, parts)
+		const track = await searchTrackWithArtistFallback(token, parts)
 		logSpotifyMatch(track)
 		return track?.id ?? null
 	}
