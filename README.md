@@ -46,7 +46,7 @@ Then click your name in the top-right corner and open the Dashboard.
 
 Here you're going to create a Spotify application that the bot will use to authenticate and communicate with the Spotify API.
 
-![img](/docs/Screenshot 2026-05-29 111338.png?raw=true "")
+![img](/docs/Screenshot%202026-05-29%20111338.png?raw=true "")
 
 The Name and Description can be whatever you'd like.
 
@@ -56,19 +56,19 @@ Set the "Redirect URIs" to:
 
 Make sure "Web API" is checked.
 
-![img](/docs/Screenshot 2026-05-29 111954.png?raw=true "")
+![img](/docs/Screenshot%202026-05-29%20111954.png?raw=true "")
 
 Once it's created, you'll have a Client ID and Client Secret. You'll need these to set up the bot's authentication.
 
-![img](/docs/Screenshot 2026-05-29 112142.png?raw=true "")
+![img](/docs/Screenshot%202026-05-29%20112142.png?raw=true "")
 
 Now you need to download the bot. If you already have Git installed, just clone the repository wherever you'd like to keep the scripts. If not, and you're unfamiliar with Git, just download the ZIP file and extract it. I'd recommend extracting it somewhere you'll want to keep your Streamer.bot scripts.
 
-![img](/docs/Screenshot 2026-05-29 110502.png?raw=true "")
+![img](/docs/Screenshot%202026-05-29%20110502.png?raw=true "")
 
 Open a terminal in the folder. On Windows, you can do this by typing "cmd" in the address bar and pressing Enter.
 
-![img](/docs/Screenshot 2026-05-29 112931.png?raw=true "")
+![img](/docs/Screenshot%202026-05-29%20112931.png?raw=true "")
 
 In the terminal, run:
 
@@ -90,7 +90,7 @@ and authenticate with Spotify.
 
 Your terminal should look like this once you've successfully authenticated.
 
-![img](/docs/Screenshot 2026-05-29 113807.png?raw=true "")
+![img](/docs/Screenshot%202026-05-29%20113807.png?raw=true "")
 
 If you'd like to verify that the bot is working correctly, make sure Spotify is open and actively playing, then run:
 
@@ -98,19 +98,19 @@ If you'd like to verify that the bot is working correctly, make sure Spotify is 
 
 You should see the song appear in your queue.
 
-![img](/docs/Screenshot 2026-05-29 114214.png?raw=true "")
+![img](/docs/Screenshot%202026-05-29%20114214.png?raw=true "")
 
 Now you just need to connect the bot to Streamer.bot.
 
 In Streamer.bot, go to your Twitch channel point rewards and create a song request redemption.
 
-![img](/docs/Screenshot 2026-05-29 114857.png?raw=true "")
+![img](/docs/Screenshot%202026-05-29%20114857.png?raw=true "")
 
 Go to "Actions" under "Actions & Queues".
 
 Create a new action.
 
-![img](/docs/Screenshot 2026-05-29 115014.png?raw=true "")
+![img](/docs/Screenshot%202026-05-29%20115014.png?raw=true "")
 
 Under the action's triggers, right-click and select:
 
@@ -118,13 +118,13 @@ Under the action's triggers, right-click and select:
 
 Then choose the channel point reward you created.
 
-![img](/docs/Screenshot 2026-05-29 115319.png?raw=true "")
+![img](/docs/Screenshot%202026-05-29%20115319.png?raw=true "")
 
 Under Sub-Actions, right-click and select:
 
     Add -> Core -> System -> Run a Program
 
-![img](/docs/Screenshot 2026-05-29 115618.png?raw=true "")
+![img](/docs/Screenshot%202026-05-29%20115618.png?raw=true "")
 
 Set "Target" to:
 
@@ -132,7 +132,7 @@ Set "Target" to:
 
 Set "Working Directory" to the folder where the scripts are located.
 
-![img](/docs/Screenshot 2026-05-29 115618.png?raw=true "")
+![img](/docs/Screenshot%202026-05-29%20115618.png?raw=true "")
 
 "Arguments" should contain the script you want to run.
 
@@ -152,7 +152,7 @@ Under Sub-Actions, right-click and select:
 
     Add -> Core -> Logic -> If/Else
 
-![img](/docs/Screenshot 2026-05-29 120724.png?raw=true "")
+![img](/docs/Screenshot%202026-05-29%20120724.png?raw=true "")
 
 Input:
 
@@ -166,7 +166,7 @@ Under the "True Result", right-click and select:
 
     Add -> Twitch -> Chat -> Send Message to Channel
 
-![img](/docs/Screenshot 2026-05-29 121028.png?raw=true "")
+![img](/docs/Screenshot%202026-05-29%20121028.png?raw=true "")
 
 This message can be anything; it just lets viewers know that a song was added. I use:
 
@@ -194,14 +194,14 @@ Under Triggers, select:
 
 Then create a new command.
 
-![img](/docs/Screenshot 2026-05-29 121657.png?raw=true "")
+![img](/docs/Screenshot%202026-05-29%20121657.png?raw=true "")
 
 Under Sub-Actions, add the same "Run a Program", "If/Else", and "Send Message to Channel" actions that you used previously.
 
-![img](/docs/Screenshot 2026-05-29 121932.png?raw=true "")
-![img](/docs/Screenshot 2026-05-29 121951.png?raw=true "")
-![img](/docs/Screenshot 2026-05-29 122010.png?raw=true "")
-![img](/docs/Screenshot 2026-05-29 122028.png?raw=true "")
+![img](/docs/Screenshot%202026-05-29%20121932.png?raw=true "")
+![img](/docs/Screenshot%202026-05-29%20121951.png?raw=true "")
+![img](/docs/Screenshot%202026-05-29%20122010.png?raw=true "")
+![img](/docs/Screenshot%202026-05-29%20122028.png?raw=true "")
 
 ## (Optional) Add a song request command
 
@@ -213,11 +213,11 @@ Under Triggers, select:
 
 Then create a new command.
 
-![img](/docs/Screenshot 2026-05-29 122347.png?raw=true "")
+![img](/docs/Screenshot%202026-05-29%20122347.png?raw=true "")
 
 From here, you can simply copy the sub-actions from your channel point redemption action and paste them into this command's Sub-Actions.
 
-![img](/docs/Screenshot 2026-05-29 122616.png?raw=true "")
-![img](/docs/Screenshot 2026-05-29 122743.png?raw=true "")
+![img](/docs/Screenshot%202026-05-29%20122616.png?raw=true "")
+![img](/docs/Screenshot%202026-05-29%20122743.png?raw=true "")
 
 You don't need to edit any of the sub-action values.
