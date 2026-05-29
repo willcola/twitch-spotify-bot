@@ -30,9 +30,13 @@ Lullaby
 
 The bot does its best to extract the artist and song title from the YouTube video's oEmbed data. Works most of the time :)
 
-    https://youtu.be/Cd1yeOGcL84?si=wYjhKnpbYPxM8-dH
+```text
+https://youtu.be/Cd1yeOGcL84?si=wYjhKnpbYPxM8-dH
+```
 
-    https://youtu.be/PD12zGuqSRY?si=JSjD_yZwLi-q_FcR
+```text
+https://youtu.be/PD12zGuqSRY?si=JSjD_yZwLi-q_FcR
+```
 
 ## Requirements
 
